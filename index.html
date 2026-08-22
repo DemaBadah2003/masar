@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dima Wael Baddah — Full-Stack Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="#top" class="logo"><span class="logo-brackets">&lt;/&gt;</span>Dima<span class="dot">.</span>dev</a>
+    <nav class="main-nav" aria-label="Primary">
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+      <label for="nav-toggle" class="nav-toggle"><span></span><span></span><span></span><span class="sr-only">Menu</span></label>
+      <ul id="nav-list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li class="nav-cta-item"><a href="#contact" class="nav-cta">Let's talk</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section id="top" class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="code-label">// full-stack developer</p>
+        <h1>Hi, I'm Dima Wael Baddah.<br>I build complete products, front to back.</h1>
+        <p class="hero-lead">I design and ship full-stack web applications with <strong>React</strong>, <strong>Next.js</strong>, and <strong>Laravel</strong> — from the interface someone taps on, to the API and database underneath it.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View my projects</a>
+          <a href="#contact" class="btn btn-ghost">Get in touch</a>
+        </div>
+        <ul class="hero-stack">
+          <li>React</li><li>Next.js</li><li>Laravel</li><li>MySQL</li><li>Tailwind CSS</li>
+        </ul>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="code-window">
+          <div class="code-window-bar">
+            <span></span><span></span><span></span>
+            <span class="code-window-title">dima.dev.jsx</span>
+          </div>
+          <pre class="code-window-body"><code><span class="c-key">const</span> <span class="c-var">developer</span> = {
+  <span class="c-prop">name</span>: <span class="c-str">"Dima Wael Baddah"</span>,
+  <span class="c-prop">role</span>: <span class="c-str">"Full-Stack Developer"</span>,
+  <span class="c-prop">stack</span>: [<span class="c-str">"React"</span>, <span class="c-str">"Next.js"</span>, <span class="c-str">"Laravel"</span>],
+  <span class="c-prop">focus</span>: <span class="c-str">"clean UI + solid APIs"</span>,
+  <span class="c-prop">available</span>: <span class="c-key">true</span><span class="cursor">▌</span>
+};</code></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section about">
+    <div class="wrap about-grid">
+      <div class="about-visual">
+        <div class="avatar-card">
+          <div class="avatar-ring">DB</div>
+          <p class="avatar-name">Dima Wael Baddah</p>
+          <p class="avatar-role">Full-Stack Web Developer</p>
+          <div class="avatar-badges">
+            <span><i class="fa-brands fa-react"></i> React</span>
+            <span><i class="fa-solid fa-n"></i> Next.js</span>
+            <span><i class="fa-brands fa-laravel"></i> Laravel</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-copy">
+        <p class="code-label">// 01 — about</p>
+        <h2>I like building the whole thing, not just one layer.</h2>
+        <p>I work across the full stack — React and Next.js on the front end, Laravel powering the API and business logic behind it. That combination lets me take a product from an idea on paper to something people can actually log into and use.</p>
+        <p>My focus is on clean, maintainable code and interfaces that feel considered — whether that's a dashboard, an e-commerce storefront, or a platform built to help people find help faster.</p>
+        <div class="about-stats">
+          <div><span class="stat-num">3</span><span class="stat-label">full-stack projects shipped</span></div>
+          <div><span class="stat-num">2</span><span class="stat-label">core stacks: MERN-style React &amp; Laravel</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section services">
+    <div class="wrap">
+      <p class="code-label center">// 02 — services</p>
+      <h2 class="section-title center">What I can build for you</h2>
+      <div class="card-grid">
+        <article class="card">
+          <div class="card-icon"><i class="fa-brands fa-react"></i></div>
+          <h3>Frontend development</h3>
+          <p>Responsive, component-driven interfaces built with React and Next.js — fast, accessible, and easy to extend.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon"><i class="fa-brands fa-laravel"></i></div>
+          <h3>Backend &amp; APIs</h3>
+          <p>Laravel APIs, authentication, and database design that stay reliable as your product grows.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon"><i class="fa-solid fa-layer-group"></i></div>
+          <h3>Full-stack delivery</h3>
+          <p>End-to-end builds where the frontend and backend are designed together from day one, not stitched on afterward.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS (Features) -->
+  <section id="projects" class="section projects">
+    <div class="wrap">
+      <p class="code-label center">// 03 — projects</p>
+      <h2 class="section-title center">A few things I've built</h2>
+      <div class="project-grid">
+
+        <article class="project-card">
+          <div class="project-top">
+            <span class="project-tag">Humanitarian &middot; React + Laravel</span>
+            <h3>AidMap</h3>
+          </div>
+          <p>A mapping platform that helps humanitarian teams locate active aid distribution points and report on-the-ground needs in real time. React front end, Laravel API, live map layers built on real coordinates.</p>
+          <ul class="project-tech">
+            <li>React</li><li>Laravel</li><li>MySQL</li><li>REST API</li>
+          </ul>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <span class="project-tag">E-commerce &middot; Next.js + Laravel</span>
+            <h3>storeDema</h3>
+          </div>
+          <p>A full-stack online storefront with product catalogs, cart, and checkout flow. Next.js handles the storefront and SEO-friendly pages; Laravel manages inventory, orders, and the admin panel.</p>
+          <ul class="project-tech">
+            <li>Next.js</li><li>Laravel</li><li>Tailwind CSS</li><li>MySQL</li>
+          </ul>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <span class="project-tag">EdTech &middot; React + Laravel</span>
+            <h3>LMS</h3>
+          </div>
+          <p>A learning management system for courses, quizzes, and student progress tracking. Instructors manage content through a Laravel backend; students learn through a React interface built for focus.</p>
+          <ul class="project-tech">
+            <li>React</li><li>Laravel</li><li>MySQL</li><li>Auth &amp; Roles</li>
+          </ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" class="section testimonials">
+    <div class="wrap">
+      <p class="code-label center">// 04 — testimonials</p>
+      <h2 class="section-title center">What people say about working with me</h2>
+      <div class="testimonial-grid">
+        <blockquote class="testimonial">
+          <p>"Dima built our project's admin panel and public site in parallel and kept both in sync the whole way. Communication was clear from day one."</p>
+          <footer>
+            <div class="t-avatar">KM</div>
+            <div><cite>Karim Mansour</cite><span>Project Coordinator, AidMap partner</span></div>
+          </footer>
+        </blockquote>
+        <blockquote class="testimonial">
+          <p>"She understands both sides of the stack, which meant fewer handoffs and fewer bugs falling through the cracks between frontend and API."</p>
+          <footer>
+            <div class="t-avatar">RH</div>
+            <div><cite>Rana Haddad</cite><span>Product Owner</span></div>
+          </footer>
+        </blockquote>
+        <blockquote class="testimonial">
+          <p>"Delivered the LMS ahead of schedule with clean, documented code. Easy to hand off to our internal team afterward."</p>
+          <footer>
+            <div class="t-avatar">YS</div>
+            <div><cite>Yousef Saleh</cite><span>Technical Lead</span></div>
+          </footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="pricing" class="section pricing">
+    <div class="wrap">
+      <p class="code-label center">// 05 — pricing</p>
+      <h2 class="section-title center">Freelance packages</h2>
+      <div class="pricing-grid">
+        <article class="price-card">
+          <h3>Landing Page</h3>
+          <p class="price">$150<span>/ project</span></p>
+          <ul>
+            <li><i class="fa-solid fa-check"></i> Single responsive page</li>
+            <li><i class="fa-solid fa-check"></i> React or plain HTML/CSS</li>
+            <li><i class="fa-solid fa-check"></i> 2 rounds of revisions</li>
+          </ul>
+          <a href="#contact" class="btn btn-ghost">Start here</a>
+        </article>
+        <article class="price-card featured">
+          <span class="price-tag">Most requested</span>
+          <h3>Full-Stack App</h3>
+          <p class="price">$600<span>/ project</span></p>
+          <ul>
+            <li><i class="fa-solid fa-check"></i> React/Next.js frontend</li>
+            <li><i class="fa-solid fa-check"></i> Laravel API &amp; database</li>
+            <li><i class="fa-solid fa-check"></i> Auth, admin panel included</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary">Let's talk</a>
+        </article>
+        <article class="price-card">
+          <h3>Custom / Ongoing</h3>
+          <p class="price">Let's scope it</p>
+          <ul>
+            <li><i class="fa-solid fa-check"></i> Larger or long-term builds</li>
+            <li><i class="fa-solid fa-check"></i> Maintenance &amp; new features</li>
+            <li><i class="fa-solid fa-check"></i> Flexible engagement</li>
+          </ul>
+          <a href="#contact" class="btn btn-ghost">Describe your project</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section faq">
+    <div class="wrap faq-wrap">
+      <p class="code-label center">// 06 — faq</p>
+      <h2 class="section-title center">Common questions</h2>
+      <div class="faq-list">
+        <details>
+          <summary>What's your main stack?<i class="fa-solid fa-plus" aria-hidden="true"></i></summary>
+          <p>React and Next.js for the frontend, Laravel and MySQL for the backend. I'm comfortable owning both sides of a project.</p>
+        </details>
+        <details>
+          <summary>Do you work with existing codebases?<i class="fa-solid fa-plus" aria-hidden="true"></i></summary>
+          <p>Yes — I can join a project partway through, whether that means adding features, fixing bugs, or refactoring an existing React or Laravel app.</p>
+        </details>
+        <details>
+          <summary>How long does a typical project take?<i class="fa-solid fa-plus" aria-hidden="true"></i></summary>
+          <p>A landing page usually takes 3–5 days. A full-stack app depends on scope, but most land between 3–6 weeks — I'll give you a clear estimate after we scope it together.</p>
+        </details>
+        <details>
+          <summary>Are you available for remote, freelance work?<i class="fa-solid fa-plus" aria-hidden="true"></i></summary>
+          <p>Yes. I work remotely and communicate in Arabic or English, whichever is easier for you.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact">
+    <div class="wrap contact-grid">
+      <div class="contact-copy">
+        <p class="code-label">// 07 — contact</p>
+        <h2>Have a project in mind?</h2>
+        <p>Send a message with a short description of what you need — I usually reply within a day.</p>
+        <ul class="contact-info">
+          <li><i class="fa-solid fa-envelope"></i> demabadah4@gmail.com</li>
+          <li><i class="fa-brands fa-github"></i> https://github.com/DemaBadah2003</li>
+          <li><i class="fa-brands fa-linkedin"></i> https://www.linkedin.com/in/dema-badah/</li>
+          <li><i class="fa-brands fa-whatsapp"></i> Available on request</li>
+        </ul>
+      </div>
+      <form class="contact-form" onsubmit="return false;">
+        <label for="name">Name</label>
+        <input id="name" type="text" placeholder="Your name" required>
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="you@example.com" required>
+        <label for="message">Project details</label>
+        <textarea id="message" rows="4" placeholder="Tell me a bit about what you're building" required></textarea>
+        <button type="submit" class="btn btn-primary">Send message</button>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <a href="#top" class="logo"><span class="logo-brackets">&lt;/&gt;</span>Dima<span class="dot">.</span>dev</a>
+      <p>Full-stack developer — React, Next.js &amp; Laravel.</p>
+    </div>
+    <div>
+      <h4>Site</h4>
+      <ul><li><a href="#about">About</a></li><li><a href="#projects">Projects</a></li><li><a href="#pricing">Pricing</a></li></ul>
+    </div>
+    <div>
+      <h4>Work</h4>
+      <ul><li><a href="#projects">AidMap</a></li><li><a href="#projects">storeDema</a></li><li><a href="#projects">LMS</a></li></ul>
+    </div>
+    <div>
+      <h4>Connect</h4>
+      <div class="social-row">
+        <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <p>&copy; 2026 Dima Wael Baddah. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>

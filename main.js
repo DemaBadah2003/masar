@@ -1,46 +1,34 @@
-// Function to calculate the sum of numbers in the array
-function calculateSum(numbers) {
-  let sum = 0;
-  for (let i = 0; i < numbers.length; i++) {
-    sum += numbers[i];
+// قائمة درجات الطلاب
+let grades = [85, 45, 60, 92, 38, 70, 55, 100, 65, 40];
+
+// متغيرات لتخزين النتائج
+let passedCount = 0;
+let failedCount = 0;
+let totalGrades = 0;
+
+// اللوب اللي بيمر على كل درجة
+for (let i = 0; i < grades.length; i++) {
+  let grade = grades[i];
+
+  // نجمع الدرجة على الإجمالي
+  totalGrades += grade;
+
+  // نتحقق: ناجح ولا راسب؟
+  if (grade >= 60) {
+    passedCount++;
+    console.log(`الطالب رقم ${i + 1}: الدرجة ${grade} - ناجح ✅`);
+  } else {
+    failedCount++;
+    console.log(`الطالب رقم ${i + 1}: الدرجة ${grade} - راسب ❌`);
   }
-  return sum;
 }
 
-// Function to calculate the average of numbers in the array
-function calculateAverage(numbers) {
-  const sum = calculateSum(numbers);
-  return sum / numbers.length;
-}
+// حساب المتوسط
+let averageGrade = totalGrades / grades.length;
 
-// Function to find the maximum value in the array
-function calculateMax(numbers) {
-  let max = numbers[0];
-  for (let i = 1; i < numbers.length; i++) {
-    if (numbers[i] > max) {
-      max = numbers[i];
-    }
-  }
-  return max;
-}
-
-// Function to find the minimum value in the array
-function calculateMin(numbers) {
-  let min = numbers[0];
-  for (let i = 1; i < numbers.length; i++) {
-    if (numbers[i] < min) {
-      min = numbers[i];
-    }
-  }
-  return min;
-}
-
-// List of numbers to test the functions
-const numbers = [12, 45, 7, 23, 56, 3, 89, 34];
-
-// Calling the functions and displaying results
-console.log("Numbers:", numbers);
-console.log("Sum:", calculateSum(numbers));
-console.log("Average:", calculateAverage(numbers));
-console.log("Max:", calculateMax(numbers));
-console.log("Min:", calculateMin(numbers));
+// عرض النتائج النهائية
+console.log("---------------------------");
+console.log("عدد الطلاب الناجحين:", passedCount);
+console.log("عدد الطلاب الراسبين:", failedCount);
+console.log("إجمالي الدرجات:", totalGrades);
+console.log("متوسط الدرجات:", averageGrade.toFixed(2));
